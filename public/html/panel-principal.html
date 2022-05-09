@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/vistas/css/loginEmpleado.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Panel principal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Welldex Prueba</a>
+                <div class="links">
+                    <a class="nav-item" href="#">Registrar nueva operación aduanera</a>&nbsp;&nbsp;
+                    <a class="nav-item" href="#">Cerrar sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h2 class="text-center">Panel principal</h2>
+    <p class="fst-italic fs-5 text-center">Aqui podrá visualizar las operaciones aduanales de su aduana de acuerdo a los
+        estatus de los mismos
+        ademas de <br> poder modificar el estatus de los mismos
+    </p>
+
+
+    <div class="container contenedor-tarjetas">
+        <div class="d-flex justify-content-between fila-tarjetas">
+            <div class="col-5">
+                <h5 class="text-center header-tarjetas">Alta</h5>
+                <table class="table">
+                  <!--<p class="text-center fw-bold">
+                        No cuenta aún con operaciones aduanales dadas <br>
+                        de alta.-->  
+                    </p>
+                </table>
+            </div>
+
+            <div class="col-5">
+                <h5 class="text-center mb-0 header-tarjetas">En trayecto</h5>
+                <!--<p class="text-center fw-bold">
+                        No con cargamentos en trayecto.-->  
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">FOLIO</th>
+                            <th scope="col">TIPO <br> OPERACION</th>
+                            <th scope="col">TIPO <br> MERCANCIA</th>
+                            <th scope="col">OPCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">aDlMnb109l</th>
+                            <td>IMPORTACION</td>
+                            <td>CARGA SUELTA</td>
+                            <td>
+                                <button type="button" class="btn btn-info">Detalles</button><br>
+                                <button type="button" class="btn btn-success">Informar arribo</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="d-flex justify-content-between fila-tarjetas">
+            <div class="col-5">
+                <!--<p class="text-center fw-bold">
+                        No cuenta aún con operaciones aduanales dadas <br>
+                        en espera de zarpe.-->  
+                <h5 class="text-center header-tarjetas">En espera de zarpe</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">FOLIO</th>
+                            <th scope="col">TIPO <br> OPERACION</th>
+                            <th scope="col">TIPO <br> MERCANCIA</th>
+                            <th scope="col">OPCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">aDlMnb109l</th>
+                            <td>IMPORTACION</td>
+                            <td>CARGA SUELTA</td>
+                            <td>
+                                <button type="button" class="btn btn-info">Detalles</button><br>
+                                <button type="button" class="btn btn-success">Iniciar zarpe</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-5">
+                <!--<p class="text-center fw-bold">
+                        No cuenta aún con operaciones aduanales dadas <br>
+                        descargadas.-->  
+                <h5 class="text-center header-tarjetas">Descargado</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">FOLIO</th>
+                            <th scope="col">TIPO <br> OPERACION</th>
+                            <th scope="col">TIPO <br> MERCANCIA</th>
+                            <th scope="col">OPCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">aDlMnb109l</th>
+                            <td>IMPORTACION</td>
+                            <td>CARGA SUELTA</td>
+                            <td>
+                                <button type="button" class="btn btn-info">Detalles</button><br>
+                                <button type="button" class="btn btn-success">Liberar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

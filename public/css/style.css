@@ -1,0 +1,160 @@
+/* The Modal (background) */
+
+
+
+.modaal {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+
+  
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }  
+
+  /* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+  /* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+  
+
+
+
+
+
+.control_principal{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border: 2px solid black;
+    min-height: 91.5vh;
+    flex-direction: row;
+}
+
+.control_principal_logincont{
+    border: 0px solid black;
+    width: 40%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.link-button{
+    color: blue;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.contenedor-tarjetas{
+    margin-top: 5%;
+}
+
+.fila-tarjetas{
+    margin-bottom: 30px;
+}
+
+.col-5{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.header-tarjetas{
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.cont-form-op{
+    margin-top: 20px;
+}
+
+.contenedor-formulario{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
